@@ -29,3 +29,7 @@ Module2-Bioinformatics/covid_variants_aligned.afa
 Module2-Bioinformatics/proteinBLASTresult.fa
 Module2-Bioinformatics/proteinBLASTresult.xml
 Module2-Bioinformatics/Variant_Alignment.png
+biom421/biom421.egg-info/*
+biom421/biom421/__pycache__/*
+Module1-PreliminaryPython/.virtual_documents/*
+Module1-PreliminaryPython/.ipynb_checkpoints/*
