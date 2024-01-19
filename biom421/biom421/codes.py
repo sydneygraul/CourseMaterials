@@ -9,7 +9,7 @@ Created on Fri Jan 19 08:04:38 2024
 import numpy as np
 
 def chooseMember(students, probs):
-    if sum(probs)==0:
+    if np.sum(probs)==0:
         print('All probabilities are zero - Nothing to choose!')
         return [], []
         
