@@ -48,7 +48,8 @@ def spring2024Students():
               'Sherly Manoharan',
               'Mark Metheny',
               'Anika OBrian',
-              'Abbie Tangen']
+              'Abbie Tangen',
+              'Vivia Van De Mark']
 
 def geneRegulationTopics():
     return ['Signal Transduction and Cellular Signaling - Receptor-Mediated Signaling: Activation of gene expression in response to extracellular signals.',
