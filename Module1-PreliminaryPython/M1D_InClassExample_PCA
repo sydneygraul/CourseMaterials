@@ -1,0 +1,29 @@
+# Import necessary libraries
+import numpy as np
+import matplotlib.pyplot as plt
+from sklearn import datasets
+from sklearn.decomposition import PCA
+
+# Load the Iris dataset
+iris = datasets.load_iris()
+X = iris.data
+y = iris.target
+
+# Standardize the data (optional, but often recommended for PCA)
+X_standardized = (X - np.mean(X, axis=0)) / np.std(X, axis=0)
+
+# Apply PCA to reduce the dimensionality to 2 components
+pca = PCA(n_components=2)
+X_pca = pca.fit_transform(X_standardized)
+
+# Plot the results
+plt.figure(figsize=(8, 6))
+colors = ['red', 'green', 'blue']
+for i in range(3):
+    plt.scatter(X_pca[y == i, 0], X_pca[y == i, 1], c=colors[i], label=iris.target_names[i])
+
+plt.title('PCA of Iris Dataset')
+plt.xlabel('Principal Component 1')
+plt.ylabel('Principal Component 2')
+plt.legend()
+plt.show()
